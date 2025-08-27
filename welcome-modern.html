@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
     <meta name="author" content="ParrotSpeech.com">
     <meta name="keywords" content="parrot talk, parrottalk, talking parrot, B&G macaw">
     <meta name="description" content="Welcome to Arielle's world - Modern enhanced version with Vite">
-    
+
     <!-- Keep original styling but make it more maintainable -->
     <style>
         body {
@@ -19,36 +20,36 @@
             background-image: url('/clipart/backgrounds/tile/textured_white.gif');
             color: #000000;
         }
-        
+
         .container {
             position: relative;
             width: 784px;
             margin: 0 auto;
             min-height: 2969px;
         }
-        
+
         .navigation {
             position: absolute;
             left: 6px;
             top: 5px;
             width: 177px;
         }
-        
+
         .nav-item {
             display: block;
             margin-bottom: 4px;
             transition: opacity 0.2s ease;
         }
-        
+
         .nav-item img {
             border: 0;
             display: block;
         }
-        
+
         .nav-item:hover {
             opacity: 0.8;
         }
-        
+
         .welcome-title {
             position: absolute;
             left: 205px;
@@ -56,7 +57,7 @@
             width: 578px;
             height: 58px;
         }
-        
+
         .welcome-title h1 {
             color: #663300;
             font-size: 48px;
@@ -64,7 +65,7 @@
             font-weight: bold;
             margin: 0;
         }
-        
+
         /* Modern enhancements */
         @media (max-width: 800px) {
             .container {
@@ -72,19 +73,19 @@
                 padding: 0 10px;
                 box-sizing: border-box;
             }
-            
+
             .navigation {
                 position: static;
                 width: 100%;
                 margin-bottom: 20px;
             }
-            
+
             .welcome-title {
                 position: static;
                 width: 100%;
                 text-align: center;
             }
-            
+
             .welcome-title h1 {
                 font-size: 32px;
                 line-height: 40px;
@@ -92,109 +93,97 @@
         }
     </style>
 </head>
+
 <body>
     <div id="centerwrapper">
-    <div class="container">
-        <nav class="navigation" role="navigation" aria-label="Main navigation">
-            <a href="/index.html" class="nav-item">
-                <img src="/sitebuilder/images/History--Backgroud-0-inactive-35515.png" 
-                     alt="Home" 
-                     width="177" 
-                     height="50"
-                     data-hover="/sitebuilder/images/History--Backgroud-0-mouseOver-76843.png">
-            </a>
-            
-            <a href="/Welcome.html" class="nav-item">
-                <img src="/sitebuilder/images/History--Backgroud-1-active-31593.png" 
-                     alt="Welcome - Current Page" 
-                     width="177" 
-                     height="50"
-                     data-hover="/sitebuilder/images/History--Backgroud-1-mouseOver-77562.png">
-            </a>
-            
-            <a href="/HistoryBackground.html" class="nav-item">
-                <img src="/sitebuilder/images/History--Backgroud-2-inactive-31671.png" 
-                     alt="History & Background" 
-                     width="177" 
-                     height="50"
-                     data-hover="/sitebuilder/images/History--Backgroud-2-mouseOver-77968.png">
-            </a>
-            
-            <a href="/PhotoAlbum.html" class="nav-item">
-                <img src="/sitebuilder/images/History--Backgroud-3-inactive-31796.png" 
-                     alt="Photo Album" 
-                     width="177" 
-                     height="50"
-                     data-hover="/sitebuilder/images/History--Backgroud-3-mouseOver-78562.png">
-            </a>
-            
-            <a href="/MacawSpeech.html" class="nav-item">
-                <img src="/sitebuilder/images/History--Backgroud-4-inactive-32218.png" 
-                     alt="Macaw Speech" 
-                     width="177" 
-                     height="50"
-                     data-hover="/sitebuilder/images/History--Backgroud-4-mouseOver-78953.png">
-            </a>
-            
-            <a href="/ContactUs.html" class="nav-item">
-                <img src="/sitebuilder/images/History--Backgroud-9-inactive-43812.png" 
-                     alt="Contact Us" 
-                     width="177" 
-                     height="50"
-                     data-hover="/sitebuilder/images/History--Backgroud-9-mouseOver-81375.png">
-            </a>
-        </nav>
-        
-        <header class="welcome-title">
-            <h1>Welcome to Arielle's world!</h1>
-        </header>
-        
-        <main>
-            <!-- Content would go here -->
-            <p style="position: absolute; left: 205px; top: 200px; width: 578px;">
-                This is the modern enhanced version of the Welcome page, built with Vite and modern web standards while preserving the original design and functionality.
-            </p>
-            
-            <div style="position: absolute; left: 205px; top: 300px; width: 578px;">
-                <h2>Modern Features:</h2>
-                <ul>
-                    <li>Semantic HTML5 elements</li>
-                    <li>Responsive design</li>
-                    <li>Modern CSS with fallbacks</li>
-                    <li>Accessibility improvements</li>
-                    <li>Fast loading with Vite</li>
-                </ul>
-            </div>
-        </main>
-    </div>
-    
-    <!-- Include modern JavaScript -->
-    <script type="module" src="/src/main.js"></script>
-    
-    <!-- Modern image hover handling -->
-    <script type="module">
-        document.addEventListener('DOMContentLoaded', function() {
-            // Modern approach to image rollovers
-            const navImages = document.querySelectorAll('.nav-item img[data-hover]');
-            
-            navImages.forEach(img => {
-                const originalSrc = img.src;
-                const hoverSrc = img.getAttribute('data-hover');
-                
-                // Preload hover image
-                const preloadImg = new Image();
-                preloadImg.src = hoverSrc;
-                
-                img.addEventListener('mouseenter', () => {
-                    img.src = hoverSrc;
-                });
-                
-                img.addEventListener('mouseleave', () => {
-                    img.src = originalSrc;
+        <div class="container">
+            <nav class="navigation" role="navigation" aria-label="Main navigation">
+                <a href="/index.html" class="nav-item">
+                    <img src="/sitebuilder/images/History--Backgroud-0-inactive-35515.png" alt="Home" width="177"
+                        height="50" data-hover="/sitebuilder/images/History--Backgroud-0-mouseOver-76843.png">
+                </a>
+
+                <a href="/Welcome.html" class="nav-item">
+                    <img src="/sitebuilder/images/History--Backgroud-1-active-31593.png" alt="Welcome - Current Page"
+                        width="177" height="50"
+                        data-hover="/sitebuilder/images/History--Backgroud-1-mouseOver-77562.png">
+                </a>
+
+                <a href="/HistoryBackground.html" class="nav-item">
+                    <img src="/sitebuilder/images/History--Backgroud-2-inactive-31671.png" alt="History & Background"
+                        width="177" height="50"
+                        data-hover="/sitebuilder/images/History--Backgroud-2-mouseOver-77968.png">
+                </a>
+
+                <a href="/PhotoAlbum.html" class="nav-item">
+                    <img src="/sitebuilder/images/History--Backgroud-3-inactive-31796.png" alt="Photo Album" width="177"
+                        height="50" data-hover="/sitebuilder/images/History--Backgroud-3-mouseOver-78562.png">
+                </a>
+
+                <a href="/MacawSpeech.html" class="nav-item">
+                    <img src="/sitebuilder/images/History--Backgroud-4-inactive-32218.png" alt="Macaw Speech"
+                        width="177" height="50"
+                        data-hover="/sitebuilder/images/History--Backgroud-4-mouseOver-78953.png">
+                </a>
+
+                <a href="/ContactUs.html" class="nav-item">
+                    <img src="/sitebuilder/images/History--Backgroud-9-inactive-43812.png" alt="Contact Us" width="177"
+                        height="50" data-hover="/sitebuilder/images/History--Backgroud-9-mouseOver-81375.png">
+                </a>
+            </nav>
+
+            <header class="welcome-title">
+                <h1>Welcome to Arielle's world!</h1>
+            </header>
+
+            <main>
+                <!-- Content would go here -->
+                <p style="position: absolute; left: 205px; top: 200px; width: 578px;">
+                    This is the modern enhanced version of the Welcome page, built with Vite and modern web standards
+                    while preserving the original design and functionality.
+                </p>
+
+                <div style="position: absolute; left: 205px; top: 300px; width: 578px;">
+                    <h2>Modern Features:</h2>
+                    <ul>
+                        <li>Semantic HTML5 elements</li>
+                        <li>Responsive design</li>
+                        <li>Modern CSS with fallbacks</li>
+                        <li>Accessibility improvements</li>
+                        <li>Fast loading with Vite</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+
+        <!-- Include modern JavaScript -->
+        <script type="module" src="/src/main.js"></script>
+
+        <!-- Modern image hover handling -->
+        <script type="module">
+            document.addEventListener('DOMContentLoaded', function () {
+                // Modern approach to image rollovers
+                const navImages = document.querySelectorAll('.nav-item img[data-hover]');
+
+                navImages.forEach(img => {
+                    const originalSrc = img.src;
+                    const hoverSrc = img.getAttribute('data-hover');
+
+                    // Preload hover image
+                    const preloadImg = new Image();
+                    preloadImg.src = hoverSrc;
+
+                    img.addEventListener('mouseenter', () => {
+                        img.src = hoverSrc;
+                    });
+
+                    img.addEventListener('mouseleave', () => {
+                        img.src = originalSrc;
+                    });
                 });
             });
-        });
-    </script>
+        </script>
     </div>
-  </body>
+</body>
+
 </html>
