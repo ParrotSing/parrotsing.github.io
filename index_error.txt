@@ -1,0 +1,31 @@
+<div id="e39" style="position:absolute;left:63;top:2862;width:120;height:30;">
+        <!--$addOn backgroundColor=0000FF
+publish.style=5
+addOn=resource\:/resources/addons/counter/counter.addon
+length=6
+presetValue=20307
+addOn.class=com.yahoo.sitebuilder.elements.CounterElement
+timeZone=-4
+invisible=false
+previewPath=C\:/Users/mike/sitebuilder/sites/ParrotSpeech.com/sitebuilder/images/thumbnails/index_counter.png
+publish.length=5
+transparent=transparent
+size=0
+useCounterValue=preset
+useCookies=true
+style=5
+publish.local=false
+fontColor=006600
+        <div id="e40" style="position:absolute;left:58;top:2914;width:144;height:25;">
+          <div style="width:144px;height:25px;overflow:auto;">
+          <!--$begin html$-->
+        <!-- <a href="http://freehitcountercode.com/">
+          <img border="0"
+            src="http://www.freehitcountercode.com/counter.php?b=0000ff&amp;r=000000&amp;f=ffffff&amp;unique=0&amp;start=20309"
+            width="120" height="30" />
+        </a>
+        <br />
+        <span style="font-size: 5%;">
+          <a href="http://freehitcountercode.com/">free website hit counter code</a>
+        </span> -->
+        <!--$end html$-->
